@@ -2,8 +2,8 @@
     --background-color: #E9E9E9;
     --font-color: #424242;
     --header-font-weight: 800;
-    --p-font-weight: 250;
-    --p-font-size: 1.68rem;
+    --p-font-weight: 300;
+    --p-font-size: 1.5rem;
     --form-font-size: 1.2rem;
 }
 
@@ -28,9 +28,9 @@ body {
 }
 
 #polaroid {
-    height: 650px;
+    height: 625px;
     width: 900px;
-    margin-top: -150px;
+    margin: -150px 0 -25px 0;
 }
 
 h1 {
@@ -49,14 +49,18 @@ h3 {
 .description p {
     line-height: 35px;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 40px;
 }
 
 p {
     width: 800px;
     height: 200px;
     font-weight: var(--p-font-weight);
-    font-size: 1.68rem;
+    font-size: var(--p-font-size);
+}
+
+.features {
+    margin-bottom: 90px;
 }
 
 ul {
