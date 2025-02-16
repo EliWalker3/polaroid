@@ -1,7 +1,22 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Polaroid Cloud
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<div class="title">
+    <h1>FILM TO PHONE</h1>
+    <img src="/images/polaroid-pic.png" alt="camera" id="polaroid">
+</div>
+<div class="description">
+    <h3>Any cloud, anytime.</h3>
+    <p>With Polaroid Cloud, you can sync your photos to your favorite cloud service while still enjoying the instant printing you’ve come to expect from Polaroid. Using our special instant photo paper, your image is uploaded to the web and a QR code is generated and printed with the instant photo. Perfect for sharing with your friends and family.</p>
+</div>
+<div class="features">
+    <h3>Easy, cheesy!</h3>
+    <ul>
+        {% list-items "wifi-solid" "Connect your Polaroid to a WiFi network" %}
+        {% list-items "cloud-arrow-up-solid" "Configure your favorite cloud" %}
+        {% list-items "qrcode-solid" "Point, shoot, and print your QR-tagged photo" %}
+        {% list-items "photo-film-solid" "Share your physical and digital photos with friends and family" %}
+    </ul>
+</div>
