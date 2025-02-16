@@ -1,50 +1,108 @@
+:root {
+    --background-color: #E9E9E9;
+    --font-color: #424242;
+    --header-font-weight: 800;
+    --p-font-weight: 250;
+    --p-font-size: 1.68rem;
+    --form-font-size: 1.2rem;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
-    background: #2D3142;
-    padding: 0 40px;
-    text-align: center;
-}
-
-nav {
-    margin: 40px auto 0 auto;
-    width: 250px;
-    border-radius: 50px;
-    background: #212431;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--font-color);
+    background: var(--background-color);
     padding: 0;
-}
-
-nav ul li {
-    list-style-type: none;
     margin: 0;
 }
 
-nav ul li a {
-    display: inline-block;
-    padding: 20px;
-    color: #EAE8FF;
-    text-decoration: none;
-    font-size: 1.2em;
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.small-title h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#polaroid {
+    height: 650px;
+    width: 900px;
+    margin-top: -150px;
 }
 
 h1 {
     font-size: 8em;
-    letter-spacing: -2px;
+    font-weight: var(--header-font-weight);
+    text-align: center;
+    line-height: 8rem;
 }
 
-h1 strong {
-    background: rgb(34,193,195);
-    background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h3 {
+    font-weight: var(--header-font-weight);
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-img.about {
-    opacity: 0.5;
+.description p {
+    line-height: 35px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+p {
+    width: 800px;
+    height: 200px;
+    font-weight: var(--p-font-weight);
+    font-size: 1.68rem;
+}
+
+ul {
+    font-weight: var(--p-font-weight);
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+    font-size: var(--p-font-size);
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+.small-logo {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 125px 0;
+    gap: 10px;
+    padding: 40px;
+    background: linear-gradient(#E2E2E2, #D6D7D6);
+    border-radius: 40px;
+}
+
+.email input {
+    font-size: var(--form-font-size);
+    width: 475px;
+    padding: 35px;
+    border: 1px solid #ECECEC;
+}
+
+.email button {
+    padding: 10px 20px;
+    font-size: var(--form-font-size);
+    background-color: #FF3F3C;
+    border: none;
+    color: #fff;
+    font-weight: var(--header-font-weight);
+}
+
+.email button:hover {
+    cursor: pointer;
 }
